@@ -15,7 +15,7 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
   - We hope to answer the question of how mental health affects and/or causes homelessness; these two conditions have a symbiotic relationship and due to it we would like to analyze how these issues feed in to each other. We believe visual representation of accurate data will help guide communities towards humane and logical solutions to the epidemic that is homelessness. A question we have regarding data and homelessness is if there's more men experiencing homelessness than women. Another question we wand to discuss is if data-driven conclusions are accurate in multiple countries; if it is true in the United States, is it also accurate in other countries? Lastly, we hope to find data sets that can help us answer whether there's a higher proportion of people with mental illnesses experiencing homelessness.
 
 # Finding Data
-- Where did you download the data (e.g., a web URL)?
+### Where did you download the data (e.g., a web URL)?
 
 >Mayumi: I downloaded the data set of [Homelessness Data for Seattle/King County 1998-2020 from data.world](https://data.world/sasha/count-us-in-report-homelessness-data); this particular dataset was hosted by Sasha Anderson, and open to any organization who seek to use it.
 
@@ -25,7 +25,7 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 >Jalen: I found a dataset regarding a Washington D.C metropolitan area drug study on the homeless and transient community, with data focusing on mental health and mental health treatment. (https://www.datafiles.samhsa.gov/study-dataset/washington-dc-metropolitan-area-drug-study-1991-homeless-and-transient-population-dc)
 
-- How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
+### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
 >Mayumi: from the "About" summary of the host: "This dataset is compiled from the Count Us In yearly counts conducted by All Home, the lead agency for the Seattle/King County Continuum of Care. The Continuum of Care is responsible for providing data to the Department of Health and Human Services in order to be eligible to receive federal funding. This count is conducted on a single night in January of each year."
 
@@ -39,7 +39,7 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 >Jalen: Taken from "Study Details": "The Homeless and Transient Population study examines the prevalence of illicit drug, alcohol, and tobacco use among members of the homeless and transient population aged 12 and older in the Washington, DC, Metropolitan Statistical Area (DC MSA)."
 
 
-- How many observations (rows) are in your data?
+### How many observations (rows) are in your data?
 
 >Mayumi: The data has 24 rows in its landing page, but also more in different tabs containing information on reasons for displacement, services accessed, etc.
 
@@ -49,7 +49,7 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 >Jalen: My dataset is unfortunately having issues being loaded into R, but from the study details, it details the following: "The Homeless and Transient Population study consisted of 908 interviews from four overlapping sampling frames: 477 interviews with residents in 93 shelters, 224 interviews with patrons of 31 soup kitchens and food banks, 143 interviews with "literally homeless" people from 18 major cluster encampments, and 64 interviews with literally homeless people from an area probability sample of 432 census blocks in the MSA. People who were cognitively impaired and could not complete the interview were excluded from the survey. Impairment was defined as extreme intoxification or scoring more than nine on the Short Blessed Exam (Katzman, Brown, Fuld, Peck, Schecter, and Schimmel, 1983)."
 
-- How many features (columns) are in the data?
+### How many features (columns) are in the data?
 
 >Mayumi :There are 4 columns in the data's main page containing the basic information, though the data also contains multiple tabs with more specific information.
 
@@ -59,7 +59,7 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 >Jalen: My dataset is unfortunately having issues being loaded into R, but from the study details, it details the following: "The Homeless and Transient Population study consisted of 908 interviews from four overlapping sampling frames: 477 interviews with residents in 93 shelters, 224 interviews with patrons of 31 soup kitchens and food banks, 143 interviews with "literally homeless" people from 18 major cluster encampments, and 64 interviews with literally homeless people from an area probability sample of 432 census blocks in the MSA. People who were cognitively impaired and could not complete the interview were excluded from the survey. Impairment was defined as extreme intoxification or scoring more than nine on the Short Blessed Exam (Katzman, Brown, Fuld, Peck, Schecter, and Schimmel, 1983)."
 
-- What questions (from above) can be answered using the data in this dataset?
+### What questions (from above) can be answered using the data in this dataset?
 
 >Mayumi: This dataset can provide a basic foundation for analyzing the homeless population in King County, and answers questions of the factors leading to homelessness, as well as how much does mental health impact homelessness.
 
