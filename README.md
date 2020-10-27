@@ -25,19 +25,20 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 >from the "About" summary of the host: "This dataset is compiled from the Count Us In yearly counts conducted by All Home, the lead agency for the Seattle/King County Continuum of Care. The Continuum of Care is responsible for providing data to the Department of Health and Human Services in order to be eligible to receive federal funding. This count is conducted on a single night in January of each year."
 
->The data was collected by DATALAB from the following sources:
+>The second data was collected by DATALAB from the following sources:
   - Homeless Population by Region - [USAspending.dov](https://www.usaspending.gov/search), [Point-in-Time (PIT) Data](https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/)
   - Federal Programs that Address Homelessness
   - Comparing and Clustering Continuum of Care Areas
-
+  
+> we also found two datasets that show the amount of women and men experiencing homelessness around the world since 1990. The first data set was retrived through GAPMINDER that shows the female long term unemployement rate. The second data set was also retrieved through GAPMINDER which shows the male long term unemployement rate in multiple countries since 1990.
 
 - How many observations (rows) are in your data?
 
->The data has 24 rows in its landing page, but also more in different tabs containing information on reasons for displacement, services accessed, etc.
+>The first data has 24 rows in its landing page, but also more in different tabs containing information on reasons for displacement, services accessed, etc.
 
->The data has 400 observations (rows).
+>The second data has 400 observations (rows).
 
->
+>For the last dataset were collected by the International Labour Organization which has significant amount of ethos so the data is reliable. I believe the data was collected through confidential questionaires in job locations therefore the audience are employees.
 
 - How many features (columns) are in the data?
 
@@ -45,8 +46,12 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 >The second data has 25 features (columns).
 
+>Both data from the last set have 120 observations to indicate which country the percentage (element) belongs to and what year (features).
+
 - What questions (from above) can be answered using the data in this dataset?
 
 >The first dataset can provide a basic foundation for analyzing the homeless population in King County, and answers questions of the factors leading to homelessness, as well as how much does mental health impact homelessness.
 
 >The second dataset provides information about federal programs that address homelessness and provide funding. 
+
+>The last two datasets can answer how many people (male or female) have experienced homelessness in 120 different countries in percentages/rate. We can utilze these data sets to answer which country has its citizens experience homelessness the most, what year this occurred, what country has the lowest rate of homeless citizens the past 27 years, the possibilities are endless.
