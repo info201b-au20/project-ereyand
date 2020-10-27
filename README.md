@@ -9,7 +9,7 @@ We are interested in this field/domain so as to humanize thehomeless populaton t
 
 - What data-driven questions do you hope to answer about this domain (share at least 3)?
 
-We hope to answer the question of how mental health affects and/or causes mental health; these two conditions have a symbiotic relationship and due to it we would like to analyze how these issues feed in to each other.
+We hope to answer the question of how mental health affects and/or causes mental health; these two conditions have a symbiotic relationship and due to it we would like to analyze how these issues feed in to each other. We believe visual representation of accurate data will help guide communities towards humane and logical solutions to the epidemic that is homelessness. A question we have regarding data and homelessness is if there's more men experiencing homelessness than women, another question is if data-driven conclusions are accurate in multiple countries meaning if this is true in the United States, is it also accurate in other countries? Lastly, we hope to find data sets that can help us answer whether there's a higher proportion of people with mental illnesses experiencing homelessness. 
 
 # Finding Data
 - Where did you download the data (e.g., a web URL)?
