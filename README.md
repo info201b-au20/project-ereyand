@@ -16,7 +16,7 @@ We hope to answer the question of how mental health affects and/or causes mental
 # Finding Data
 - Where did you download the data (e.g., a web URL)?
 
-Mayumi: I downloaded the data set of Homelessness Data for Seattle/King County 1998-2020 from data.world; this particualar dataset was hosted by Sasha Anderson, nd open to any organization who seek to use it.
+Mayumi: I downloaded the data set of [Homelessness Data for Seattle/King County 1998-2020](https://query.data.world/s/l3lxcfp7dr2ovprrl6muth3acimfla) from data.world; this particualar dataset was hosted by Sasha Anderson, nd open to any organization who seek to use it.
 Erica: I found two datasets that show the amount of women and men experiencing homelessness around the world since 1990. The first data set was retrived through [GAPMINDER](https://www.gapminder.org/tools/?embedded=true#$state$marker$hook$which=female_long_term_unemployment_rate_percent&scaleType=linear&spaceRef:null;;;&chart-type=spreadsheet) that shows the female long term unemployement rate. The second data set was also retrieved through [GAPMINDER](https://www.gapminder.org/tools/?embedded=true#$state$marker$hook$which=male_long_term_unemployment_rate_percent&scaleType=linear&spaceRef:null;;;&chart-type=spreadsheet) which shows the male long term unemployement rate in multiple countries since 1990.
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
