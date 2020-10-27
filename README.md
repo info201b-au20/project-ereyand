@@ -17,15 +17,15 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 # Finding Data
 - Where did you download the data (e.g., a web URL)?
 
->Mayumi: I downloaded the data set of [Homelessness Data for Seattle/King County 1998-2020 from data.world](https://data.world/sasha/count-us-in-report-homelessness-data); this particular dataset was hosted by Sasha Anderson, and open to any organization who seek to use it.
+>we downloaded the data set of [Homelessness Data for Seattle/King County 1998-2020 from data.world](https://data.world/sasha/count-us-in-report-homelessness-data); this particular dataset was hosted by Sasha Anderson, and open to any organization who seek to use it.
 
->Anush: I downloaded the dataset from [DATALAB](https://datalab.usaspending.gov/homelessness-analysis/#section-geography). The data is public and available to download. However, I would like to note that it was updated as of November 2019.
+>another dataseet was downloaded from [DATALAB](https://datalab.usaspending.gov/homelessness-analysis/#section-geography). The data is public and available to download. However, I would like to note that it was updated as of November 2019.
 
 - How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
->Mayumi: from the "About" summary of the host: "This dataset is compiled from the Count Us In yearly counts conducted by All Home, the lead agency for the Seattle/King County Continuum of Care. The Continuum of Care is responsible for providing data to the Department of Health and Human Services in order to be eligible to receive federal funding. This count is conducted on a single night in January of each year."
+>from the "About" summary of the host: "This dataset is compiled from the Count Us In yearly counts conducted by All Home, the lead agency for the Seattle/King County Continuum of Care. The Continuum of Care is responsible for providing data to the Department of Health and Human Services in order to be eligible to receive federal funding. This count is conducted on a single night in January of each year."
 
->Anush: The data was collected by DATALAB from the followinf sources:
+>The data was collected by DATALAB from the following sources:
   - Homeless Population by Region - [USAspending.dov](https://www.usaspending.gov/search), [Point-in-Time (PIT) Data](https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/)
   - Federal Programs that Address Homelessness
   - Comparing and Clustering Continuum of Care Areas
@@ -33,18 +33,20 @@ Use this `REAMDE.md` file to describe your final project (as detailed on Canvas)
 
 - How many observations (rows) are in your data?
 
->Mayumi: The data has 24 rows in its landing page, but also more in different tabs containing information on reasons for displacement, services accessed, etc.
+>The data has 24 rows in its landing page, but also more in different tabs containing information on reasons for displacement, services accessed, etc.
 
->Anush: The data has 400 observations (rows).
+>The data has 400 observations (rows).
+
+>
 
 - How many features (columns) are in the data?
 
->Mayumi :There are 4 columns in the data's main page containing the basic information, though the data also contains multiple tabs with more specific information
+>There are 4 columns in the first dataset's main page containing the basic information, though the data also contains multiple tabs with more specific information
 
->Anush: The data has 25 features (columns).
+>The second data has 25 features (columns).
 
 - What questions (from above) can be answered using the data in this dataset?
 
->Mayumi: This dataset can provide a basic foundation for analyzing the homeless population in King County, and answers questions of the factors leading to homelessness, as well as how much does mental health impact homelessness.
+>The first dataset can provide a basic foundation for analyzing the homeless population in King County, and answers questions of the factors leading to homelessness, as well as how much does mental health impact homelessness.
 
->Anush: This dataset provides information about federal programs that address homelessness and provide funding. 
+>The second dataset provides information about federal programs that address homelessness and provide funding. 
