@@ -19,7 +19,7 @@ We will be exploring the field/domain of homelessness and mental health to human
 
 **Write a summary paragraph that includes information calculated by your summary information function**
 
-The information we gathered from sdjfjdf
+The data we gathered to analyze is from [The U.S. Treasury Data Lab](https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv). This dataset contains a significant amount of information that illuminates the complexities of homelessness and the number of people that experienced it at the time this data was collected. The data set contains `r format(obs_national)` in which each row represents a city in the United States that this information was gathered from. 
 
 
 **Render your table and describe pertinent observations found in it**
