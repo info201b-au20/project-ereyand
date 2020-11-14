@@ -16,10 +16,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 We will be exploring the field/domain of homelessness and mental health to humanize the homeless population that is ever so present yet invisible to our society. We want to show the inevitability and causes of homelessness and create empathy for those suffering from it. At the same time, we would like to be responsible with our data and not reduce our subject to their conditions, which is why we are committed to researching their interpersonal conditions.
 
-
+```{r include= FALSE}
+# Here are some comments
+source("summary_project.R")
+```
 **Write a summary paragraph that includes information calculated by your summary information function**
 
-The data we gathered to analyze is from [The U.S. Treasury Data Lab](https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv). This dataset contains a significant amount of information that illuminates the complexities of homelessness and the number of people that experienced it at the time this data was collected. The data set contains `r format(obs_national)` in which each row represents a city in the United States that this information was gathered from. 
+The data we gathered to analyze is from [The U.S. Treasury Data Lab](https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv). This dataset contains a significant amount of information that illuminates the complexities of homelessness and the number of people that experienced it at the time this data was collected. The data set contains `r format(obs_national)` in which each row represents a city in the United States that this information was gathered from. Thanks to this data, we were able to analyze which city has the lowest homeless population which is `r format(city_lowest)` and which has the highest (`r format(city_highest)`) out of the total `r format(total_homeless_individual)` individuals experiencing homelessness in the United States. The dataset is organized in such a concise manner that we were able to find out that `r format(highest_prop_in_shelters)` has the highest percentage of its homeless population in shelters in the entirity of the U.S.. While `r format(highest_demand_for_shelters)` has the highest demand for shelters since its the city that has the most amount of people out of shelters meaning there isn't enough space for their citizens. 
+Based on the dataset, `r format(highest_chronically_homeless_city)` is the city where there's the most chronically homeless people and `r format(highest_youth)` has the highest amount of youths (people under 25) experiencing homelessness. Unfortunately, historically there's a large number of veterans experiencing homelessness; `r format(highest_veterans)` has the highest amount of homeless vets, `r format(highest_veterans_in_shelters)` has the highest number of them in shelters. Consequently, there isn't always enough space for people in homeless shelters, `r format(highest_demand_for_veterans)` is the city that has the most unsheltered homeless veterans in the country. 
 
 
 **Render your table and describe pertinent observations found in it**
