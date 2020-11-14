@@ -10,27 +10,25 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## R Markdown
-In the Markdown document you create, you should run the other scripts to generate the necessary content your report:
+**In the Markdown document you create, you should run the other scripts to generate the necessary content your report:**
 
-Write an introductory paragraph explaining the domain/data set (feel free to borrow from the project proposal)
-Write a summary paragraph that includes information calculated by your summary information function
-Render your table and describe pertinent observations found in it
-Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart
+**Write an introductory paragraph explaining the domain/data set (feel free to borrow from the project proposal)**
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+We will be exploring the field/domain of homelessness and mental health to humanize the homeless population that is ever so present yet invisible to our society. We want to show the inevitability and causes of homelessness and create empathy for those suffering from it. At the same time, we would like to be responsible with our data and not reduce our subject to their conditions, which is why we are committed to researching their interpersonal conditions.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+**Write a summary paragraph that includes information calculated by your summary information function**
+
+The information we gathered from sdjfjdf
+
+
+**Render your table and describe pertinent observations found in it**
+```{r kable_example, echo = FALSE}
+library("knitr")
+alabama <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv")
+kable(alabama)
 ```
 
-## Including Plots
+**Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart**
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Each chart kjsdhfkjhsk
