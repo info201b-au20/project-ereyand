@@ -25,8 +25,8 @@ The information we gathered from sdjfjdf
 **Render your table and describe pertinent observations found in it**
 ```{r kable_example, echo = FALSE}
 library("knitr")
-alabama <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv")
-kable(alabama)
+national <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv")
+kable(national)
 ```
 
 **Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart**
