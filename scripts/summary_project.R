@@ -39,7 +39,7 @@ summary_info$highest_prop_in_shelters <- national %>%
   mutate(per_shelter = 
            sheltered_total_homeless_individuals / homeless_individuals) %>%
   filter(per_shelter == max(per_shelter, na.rm = TRUE)) %>% 
-  pull(coc_name)
+  pull(coc_number)
 
 # Which city has the highest demand for space based  on the
 # percentage of its homeless population that isn't in a shelter?
@@ -73,7 +73,7 @@ summary_info$highest_veterans_in_shelters <- national %>%
   mutate(vets_in_shelters = 
            sheltered_total_homeless_veterans / homeless_veterans) %>% 
   filter(vets_in_shelters == max(vets_in_shelters, na.rm = TRUE)) %>% 
-  pull(coc_name)
+  pull(coc_number)
 
 # Which city has the highest demand for shelters for homeless veterans?
 summary_info$highest_demand_for_veterans <- national %>% 
