@@ -46,4 +46,4 @@ homelessness_summary
 ```
 **Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart**
 
-Each chart kjsdhfkjhsk
+The "homelessness_summary" chart is a cleaned up version of the summary project and original dataset, outlining the total homeless in each state regarding the CoC's, and was intended to show the relationship between veterans and homelessness, as well as populations and homelessness. 
