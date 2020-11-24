@@ -9,10 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-**In the Markdown document you create, you should run the other scripts to generate the necessary content your report:**
+## Homelessness in the United States
 
-**Write an introductory paragraph explaining the domain/data set (feel free to borrow from the project proposal)**
+**Overview**
 
 We will be exploring the field/domain of homelessness and mental health to humanize the homeless population that is ever so present yet invisible to our society. We want to show the inevitability and causes of homelessness and create empathy for those suffering from it. At the same time, we would like to be responsible with our data and not reduce our subject to their conditions, which is why we are committed to researching their interpersonal conditions.
 
@@ -20,7 +19,7 @@ We will be exploring the field/domain of homelessness and mental health to human
 # Here are some comments
 source("summary_project.R")
 ```
-**Write a summary paragraph that includes information calculated by your summary information function**
+**Summary**
 
 The data we gathered to analyze is from [The U.S. Treasury Data Lab](https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv). This dataset contains a significant amount of information that illuminates the complexities of homelessness and the number of people that experienced it at the time this data was collected. The data set contains `r format(summary_info$obs_national)` in which each row represents a county in the United States where this information was gathered. 
 
@@ -37,13 +36,42 @@ There's many counties that have a high demand for homeless shelter spots for vet
 Consequently, there isn't always enough space for people in homeless shelters, `r format(summary_info$highest_demand_for_veterans)` is the city that has the most unsheltered homeless veterans in the country. 
 
 
-**Render your table and describe pertinent observations found in it**
+**Dataset we analyzed**
 ```{r kable_example, echo = FALSE}
 library("knitr")
 # national <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv")
 # kable(national)
 homelessness_summary
 ```
-**Describe the purpose of each chart (e.g., "this chart was intended to show the relationship between..."), render each chart, and describe pertinent observations found in each chart**
 
 The "homelessness_summary" chart is a cleaned up version of the summary project and original dataset, outlining the total homeless in each state regarding the CoC's, and was intended to show the relationship between veterans and homelessness, as well as populations and homelessness. 
+
+**Chart One**
+```{r include= FALSE}
+# Here are some comments
+source("first_chart.R")
+```
+
+**Chart Two**
+```{r include= FALSE}
+# Here are some comments
+source("second_chart.R")
+```
+### Homeless Veterans in Northern and Southern U.S.
+```{r}
+  mi_plot
+  tx_plot
+```
+We wanted to see if there were any similarities between the number of veterans experiencing homelessness in the Northern part of the country and the Southern part of the country. We did this by analyzing homeless data in Minnesota and Texas, both are states that are adjacent to one of the United States' bordering countries (Canada and Mexico). Sadly with so many people experiencing homelessness, the reality is that there isn't enough space for everyone in shelters so we wondering _if there were drastic differences between sheltered and unsheltered homeless veterans in Northern/South U.S.A.._
+
+**Chart Three**
+```{r include= FALSE}
+# Here are some comments
+source("third_chart.R")
+```
+### Homeless Veterans in the East Coast
+```{r}
+  ny_plot
+  fl_plot
+```
+
