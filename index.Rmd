@@ -51,34 +51,33 @@ The "homelessness_summary" chart is a cleaned up version of the summary project 
 # Here are some comments
 source("first_chart.R")
 ```
-### Highest Number of Homeless Individuals and Veterans by State Columns 
+### Homeless Veterans in the West Coast
 ```{r}
-  individuals
-  vets
+  wa_plot
+  ca_plot
 ```
-For our data visual representation, we decided to narrow it down to two variables - _homeless_individuals_ and _homeless_veterans_. 
-We want to show the proportion of the homeless population by state. In our opinion, representation via columns makes the information more accessible and readable. The unfortunate commonality between the *Highest Number of Homeless Individuals by State* and *Highest Number of Homeless Veterans by State* depicts California as the state with the highest numbers of homeless individuals and veterans. New York is the second-highest after California. We also want to highlight that Washington State has equally high numbers of homeless populations for both individuals and veterans. 
+We decided to focus on veterans who are experiencing homelessness in the United States. Unfortunately, this is still a large dataset so we decided to separate it into different regions of the country; the West coast (which will be represented with these charts), the Northern & Southern region, and the East coast. Additionally, we focused on veterans that were able to seek assistance in shelters and those who were unable due to capacity constraints, the term we use for this demographic is _unsheltered_. Our questions correlate to these specifications, _chart one is on sheltered/unsheltered veteran in the West coast_. The charts we created for these two states show a sad reality, there's a signficant amount of homeless veterans who are unsheltered. the `wa_plot` illuminates how this number is in the hundreds for Washington state. But, the `ca_plot` shows how for California, the number of unsheltered homeless veterans is in the *thousands*.
 
 **Chart Two**
 ```{r include= FALSE}
 # Here are some comments
 source("second_chart.R")
 ```
-### Highest Number of Homeless Individuals and Veterans by State Maps
+### Homeless Veterans in Northern and Southern U.S.
 ```{r}
-  ind_map
-  vets_map
+  mi_plot
+  tx_plot
 ```
-In comparison with Chart  One and Three, our map visualization does not depict the full information. We suspect that the reason lies in the dataset we used. However, we want to emphasize that the map still shows California and Washington states to be the ones with the highest numbers of homeless individuals and veterans.
+We wanted to see if there were any similarities between the number of veterans experiencing homelessness in the Northern part of the country and the Southern part of the country. We did this by analyzing homeless data in Minnesota and Texas, both are states that are adjacent to one of the United States' bordering countries (Canada and Mexico). Sadly with so many people experiencing homelessness, the reality is that there isn't enough space for everyone in shelters so we wondering _if there were drastic differences between sheltered and unsheltered homeless veterans in Northern/South U.S.A.._ Our hypothesis in regards to the question these charts answered is correct since `tx_plot` show how there's significantly more unsheltered veterans in Texas than in Minnesota. We believe this is because Texas is seen more patriotic, that this would correlate to more military service members residing in this state and therefore a higher percentage of homeless veterans.
 
 **Chart Three**
 ```{r include= FALSE}
 # Here are some comments
 source("third_chart.R")
 ```
-### Highest Number of Homeless Individuals and Veterans by State Points
+### Homeless Veterans in the East Coast
 ```{r}
-  ind_point
-  vets_point
+  ny_plot
+  fl_plot
 ```
-Another way we would like to represent our working data is via scatterplot. We think that a scatterplot chart allows visualizing numbers of  _homeless_individuals_ and _homeless_veterans_ by state. *Highest Number of Homeless Individuals by State* scatterplot tells us that the number of homeless individuals in California is more than 40,000 people, among which over 3,500 are homeless veterans. The number of homeless individuals in New York is around 35,000 people. In comparison with the first chart, we would like to highlight that scatterplot allows us to see the significant difference in Washington state numbers. We can see that the number of homeless individuals in Washington state is almost 10,000 people, whereas nearly 1000 are homeless veterans.
+Lastly, we gathered the data from two east coast states; New York and Florida. These states have many differences that vary geographically, demographically, economically, etc. The charts tell us that sadly, many homeless veterans aren't able to seek refuge in shelters due to capacity. In the `fl_plot`, we can see how significantly more veterans are unsheltered because while the data is more varied, there's a different scale on the x-axis. This is very interesting since initially, we believed that the state with the higher population would have a higher percentage of unsheltered veterans (in regards to the East coast).
