@@ -7,3 +7,6 @@ library(ggplot2)
 library(plotly)
 
 # Create server variable
+server <- function(input, output) {
+  
+}
