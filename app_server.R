@@ -12,12 +12,12 @@ national <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-er
 
 server <- function(input, output) {
   output$plot <- renderPlot({
-    plot_data <- national %>%
+    plot_data <- na.omit(national) %>%
       filter(total_homeless > 0)
     p <- ggplot(
       data = plot_data,
       mapping = aes_string(x = input$feature, y = national$total_homeless, color = "coc_number")
-    ) + labs(x = "Year", y = input$feature) +
+    ) + labs(x = "Area", y = "Total Number of Homeless Individuals") +
       geom_point()
     
     if (input$smooth) {
