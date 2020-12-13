@@ -6,6 +6,13 @@ library(tidyverse)
 library(ggplot2)
 library(plotly)
 
+feature_input <- selectInput(
+  inputId = "feature",
+  label = "Area of Interest",
+  choices = national$coc_name,
+  selected = "coc_number"
+)
+
 # create introduction page
 intro_panel <- tabPanel(
   "Introduction",
@@ -15,7 +22,10 @@ intro_panel <- tabPanel(
 # create first chart page
 first_panel <- tabPanel(
   "Chart number one",
-  p("Our first chart.")
+  p("Our first chart."),
+  feature_input,
+  checkboxInput("smooth", label = strong("Show Trendline"), value = TRUE),
+  plotOutput("plot"),
 )
 
 # create second chart page
@@ -45,3 +55,4 @@ ui <- navbarPage(
   third_panel,
   summary_panel
 )
+
