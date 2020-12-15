@@ -41,10 +41,27 @@ third_panel <- tabPanel(
 )
 
 # create summary page
+# UI ---------------------
+summary_sidebar <- sidebarPanel(
+  p("State"),
+  selectInput( 
+    inputId = "states",
+    label = "Choose a state",
+    choices = summary_df$state )
+)
+
+sum_graph <- mainPanel(
+  plotlyOutput("sum_plot")
+  
+)
+
 summary_panel <- tabPanel(
   "Summary",
-  p("What we learned.")
-)
+  titlePanel("coc pop of each state"),
+ sidebarLayout(summary_sidebar,
+               sum_graph))
+
+
 
 # Create ui variable
 ui <- navbarPage(
@@ -54,5 +71,5 @@ ui <- navbarPage(
   second_panel,
   third_panel,
   summary_panel
-)
-
+      )
+    
