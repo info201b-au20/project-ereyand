@@ -33,7 +33,9 @@ second_panel <- tabPanel(
   "Chart number two",
   titlePanel("Homeless Veterans in the West Coast"),
   plotlyOutput("wa_plot"),
+  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
   plotlyOutput("ca_plot"),
+  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
   p("Our second chart. We decided to focus on veterans who are experiencing 
     homelessness in the United States. Unfortunately, this is still a large 
     dataset so we decided to separate it into different regions of the country; 
@@ -53,7 +55,9 @@ second_panel <- tabPanel(
 # create third chart page
 side_content <- sidebarPanel(
   plotlyOutput("fl_plot"),
-  plotlyOutput("ny_plot")
+  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
+  plotlyOutput("ny_plot"),
+  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE)
 )
 main_content <- mainPanel(
   p("Lastly, we gathered the data from two east coast states; New York and 

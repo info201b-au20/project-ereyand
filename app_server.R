@@ -95,25 +95,55 @@ server <- function(input, output){
     wash_plot <- ggplot(data = homeless_wa) +
       geom_point(mapping = aes_string(x = unsheltered_homeless_veterans,
                                       y = sheltered_total_homeless_veterans)) +
-      ggtitle("Homeless Veterans in Washington")
+      labs(x = "Unsheltered Homeless Veterans", y = "Total Homeless Veterans", 
+           title = "Homeless Veterans In Washington")
+    if (input$smooth) {
+      wash_plot <- wash_plot + geom_smooth(mapping = aes(
+        x = unsheltered_homeless_veterans, 
+        y = sheltered_total_homeless_veterans, se = TRUE))
+    }
+    wash_plot
   })
+  
   output$ca_plot <- renderPlotly({
     cali_plot <- ggplot(data = homeless_ca) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +
-      ggtitle("Homeless Veterans In California")
+      labs(x = "Unsheltered Homeless Veterans", y = "Total Homeless Veterans", 
+           title = "Homeless Veterans In California")
+    if (input$smooth) {
+      cali_plot <- cali_plot + geom_smooth(mapping = aes(
+        x = unsheltered_homeless_veterans, 
+        y = sheltered_total_homeless_veterans, se = TRUE))
+    }
+      cali_plot
   })
   
   output$fl_plot <- renderPlotly({
     flor_plot <- ggplot(data = homeless_fl) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +
-      ggtitle("Homeless Veterans in Florida")
+      labs(x = "Unsheltered Homeless Veterans", y = "Total Homeless Veterans", 
+           title = "Homeless Veterans In Florida")
+    if (input$smooth) {
+      flor_plot <- flor_plot + geom_smooth(mapping = aes(
+        x = unsheltered_homeless_veterans, 
+        y = sheltered_total_homeless_veterans, se = TRUE))
+    }
+    flor_plot
   })
+  
   output$ny_plot <- renderPlotly({
     newy_plot <- ggplot(data = homeless_ny) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +
-      ggtitle("Homeless Veterans in New York")
+      labs(x = "Unsheltered Homeless Veterans", y = "Total Homeless Veterans", 
+           title = "Homeless Veterans In New York")
+    if (input$smooth) {
+      newy_plot <- newy_plot + geom_smooth(mapping = aes(
+        x = unsheltered_homeless_veterans, 
+        y = sheltered_total_homeless_veterans, se = TRUE))
+    }
+    newy_plot
   })
 }
