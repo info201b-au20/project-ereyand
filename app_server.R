@@ -68,7 +68,7 @@ server <- function(input, output){
     p_two
   })
   
-  output$plot <- renderPlot({
+  output$plot <- renderPlotly({
     plot_data <- na.omit(national) %>%
       filter(total_homeless > 0)
     p <- ggplot(
@@ -91,26 +91,26 @@ server <- function(input, output){
     
   })
   
-  output$wa_plot <- renderPlot({
+  output$wa_plot <- renderPlotly({
     wash_plot <- ggplot(data = homeless_wa) +
       geom_point(mapping = aes_string(x = unsheltered_homeless_veterans,
                                       y = sheltered_total_homeless_veterans)) +
       ggtitle("Homeless Veterans in Washington")
   })
-  output$ca_plot <- renderPlot({
+  output$ca_plot <- renderPlotly({
     cali_plot <- ggplot(data = homeless_ca) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +
       ggtitle("Homeless Veterans In California")
   })
   
-  output$fl_plot <- renderPlot({
+  output$fl_plot <- renderPlotly({
     flor_plot <- ggplot(data = homeless_fl) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +
       ggtitle("Homeless Veterans in Florida")
   })
-  output$ny_plot <- renderPlot({
+  output$ny_plot <- renderPlotly({
     newy_plot <- ggplot(data = homeless_ny) +
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
                                y = sheltered_total_homeless_veterans)) +

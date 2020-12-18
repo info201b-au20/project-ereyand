@@ -25,7 +25,7 @@ first_panel <- tabPanel(
   p("Our first chart."),
   feature_input,
   checkboxInput("smooth", label = strong("Show Trendline"), value = TRUE),
-  plotOutput("plot")
+  plotlyOutput("plot")
 )
 
 # create second chart page
@@ -52,8 +52,8 @@ second_panel <- tabPanel(
 
 # create third chart page
 side_content <- sidebarPanel(
-  plotOutput("fl_plot"),
-  plotOutput("ny_plot")
+  plotlyOutput("fl_plot"),
+  plotlyOutput("ny_plot")
 )
 main_content <- mainPanel(
   p("Lastly, we gathered the data from two east coast states; New York and 
