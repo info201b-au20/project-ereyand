@@ -6,11 +6,8 @@ library(tidyverse)
 library(ggplot2)
 library(plotly)
 
-<<<<<<< HEAD
 source("app_server.R")
 
-=======
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
 feature_input <- selectInput(
   inputId = "feature",
   label = "Area of Interest",
@@ -59,7 +56,6 @@ second_panel <- tabPanel(
 
 # create third chart page
 side_content <- sidebarPanel(
-<<<<<<< HEAD
   
   checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
   checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE)
@@ -68,14 +64,6 @@ main_content <- mainPanel(
   plotlyOutput("fl_plot"),
   plotlyOutput("ny_plot"),
   
-=======
-  plotlyOutput("fl_plot"),
-  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
-  plotlyOutput("ny_plot"),
-  checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE)
-)
-main_content <- mainPanel(
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
   p("Lastly, we gathered the data from two east coast states; New York and 
     Florida. These states have many differences that vary geographically, 
     demographically, economically, etc. The charts tell us that sadly, many 
@@ -97,23 +85,16 @@ third_panel <- tabPanel(
 
 # create summary page
 # UI ---------------------
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
 summary_sidebar <- sidebarPanel(
   p("State"),
   selectInput( 
     inputId = "states",
     label = "Choose a state",
-<<<<<<< HEAD
     choices = c("CA", "WA", "NY", "FL" ))
-=======
-    choices = summary_df$state )
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
 )
 
 sum_graph <- mainPanel(
@@ -122,7 +103,6 @@ sum_graph <- mainPanel(
 
 summary_panel <- tabPanel(
   "Summary",
-<<<<<<< HEAD
   titlePanel("Key Takeaways"),
  p("1 key takeways de "),
  p("2 key takeways de "),
@@ -132,13 +112,6 @@ summary_panel <- tabPanel(
     #summary_sidebar, 
     #sum_graph
   #)
-=======
-  titlePanel("coc pop of each state"),
-  sidebarLayout(
-    summary_sidebar, 
-    sum_graph
-  )
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
 )
 
 
@@ -152,7 +125,3 @@ ui <- navbarPage(
   third_panel,
   summary_panel
 )
-<<<<<<< HEAD
-=======
-    
->>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
