@@ -29,8 +29,13 @@ homeless_ny <- homeless_data %>%
   filter(state == "NY")
 
 
+<<<<<<< HEAD
 #summary_df <- read_excel("homelessness_sum_new.xlsx", 
                          #col_types = c("text", "text", "numeric"))
+=======
+summary_df <- read_excel("homelessness_sum_new.xlsx", 
+                         col_types = c("text", "text", "numeric"))
+>>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
 
 # Summary Plot for chronically homeless, homeless veterans and homeless youth
 make_sum_plot <- function(df, states) {
@@ -71,6 +76,7 @@ server <- function(input, output){
   output$plot <- renderPlotly({
     plot_data <- na.omit(national) %>%
       filter(total_homeless > 0)
+<<<<<<< HEAD
     #p <- ggplot(
       #data = plot_data,
       #mapping = aes(x = input$feature, y = national$total_homeless, color = "coc_number")
@@ -81,13 +87,24 @@ server <- function(input, output){
       geom_point(mapping = aes(x = input$feature, y = national$total_homeless, color = "coc_number")) +
       labs(x = "Area", y = "Total Number of Homeless Individuals") 
       
+=======
+    p <- ggplot(
+      data = plot_data,
+      mapping = aes_string(x = input$feature, y = national$total_homeless, color = "coc_number")
+    ) + labs(x = "Area", y = "Total Number of Homeless Individuals") +
+      geom_point()
+>>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
     
     if (input$smooth) {
       p <- p + geom_smooth(se = FALSE)
     }
     p
   })
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
   output$sum_plot <- renderPlotly({
     summary_df$homeless_group <- factor(
       summary_df$homeless_group, 
@@ -98,7 +115,11 @@ server <- function(input, output){
   
   output$wa_plot <- renderPlotly({
     wash_plot <- ggplot(data = homeless_wa) +
+<<<<<<< HEAD
       geom_point(mapping = aes(x = unsheltered_homeless_veterans,
+=======
+      geom_point(mapping = aes_string(x = unsheltered_homeless_veterans,
+>>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
                                       y = sheltered_total_homeless_veterans)) +
       labs(x = "Unsheltered Homeless Veterans", y = "Total Homeless Veterans", 
            title = "Homeless Veterans In Washington")
@@ -121,7 +142,11 @@ server <- function(input, output){
         x = unsheltered_homeless_veterans, 
         y = sheltered_total_homeless_veterans, se = TRUE))
     }
+<<<<<<< HEAD
     cali_plot
+=======
+      cali_plot
+>>>>>>> b242a8758d78197832813e0a2d2b979ea92bc05b
   })
   
   output$fl_plot <- renderPlotly({
