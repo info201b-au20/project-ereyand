@@ -23,7 +23,7 @@ intro_panel <- tabPanel(
 
 # create first chart page
 first_panel <- tabPanel(
-  "Chart number one",
+  "Chart 1",
   p("Our first chart."),
   feature_input,
   checkboxInput("smooth", label = strong("Show Trendline"), value = TRUE),
@@ -32,7 +32,7 @@ first_panel <- tabPanel(
 
 # create second chart page
 second_panel <- tabPanel(
-  "Chart number two",
+  "Chart 2",
   titlePanel("Homeless Veterans in the West Coast"),
   plotlyOutput("wa_plot"),
   checkboxInput("smooth", label = strong("Show Trendline"), value = FALSE),
@@ -75,7 +75,7 @@ main_content <- mainPanel(
     unsheltered veterans (in regards to the East coast).")
 )
 third_panel <- tabPanel(
-  "Chart number three",
+  "Chart 3",
   titlePanel("Homeless Veterans in the East Coast"),
   sidebarLayout(
     side_content,
@@ -104,13 +104,15 @@ sum_graph <- mainPanel(
 summary_panel <- tabPanel(
   "Summary",
   titlePanel("Key Takeaways"),
- p("1 key takeways de "),
- p("2 key takeways de "),
- p("3 key takeways de ")
+  p("1 key takeways de "),
+  p("2 key takeways de "),
+  p("It is evident from all charts that the overall homeless population is a growing problem that is nation wide.
+    In focusing our scope of analysis on the homeless veteran population we are able to gain insight onto the reasons for displacement
+    and how lack of support for the veteran population and extending to the mentally ill population, has exacerbated the homeless prblem in America")
   
-   #sidebarLayout(
-    #summary_sidebar, 
-    #sum_graph
+  #sidebarLayout(
+  #summary_sidebar, 
+  #sum_graph
   #)
 )
 
