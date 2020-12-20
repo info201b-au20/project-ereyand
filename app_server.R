@@ -8,10 +8,14 @@ library(plotly)
 library(readxl)
 
 national <- read.csv("https://raw.githubusercontent.com/info201b-au20/project-ereyand/gh-pages/panel_2_table_and_counts_v7_2020_03_27.csv", stringsAsFactors = F)
-
-# chart two data
 data <- national %>% 
   mutate(state = str_sub(coc_number, start = 1, end = 2))
+
+# chart one data
+all_homeless_wa <- data %>% 
+  filter(state == "WA")
+
+# chart two and three data
 homeless_data <- data %>% 
   group_by(state) %>% 
   mutate(sheltered_total_homeless_veterans = 
@@ -19,6 +23,7 @@ homeless_data <- data %>%
   mutate(unsheltered_homeless_veterans = 
            as.numeric(unsheltered_homeless_veterans, na.rm = TRUE)) %>% 
   select(sheltered_total_homeless_veterans, unsheltered_homeless_veterans)
+
 homeless_wa <- homeless_data %>% 
   filter(state == "WA")
 homeless_ca <- homeless_data %>% 
@@ -43,11 +48,6 @@ make_sum_plot <- function(df, states) {
     )
 }
 
-
-# chart two data
-# isolate certain columns that show different groups of people experiencing
-# homelessness
-# create feature input that has the available columns as choices
 
 # Create server variable
 
@@ -150,5 +150,12 @@ server <- function(input, output){
         y = sheltered_total_homeless_veterans, se = TRUE))
     }
     newy_plot
+  })
+  
+  output$plot_one <- renderPlot({
+    chart <- ggplot(data = all_homeless_wa) +
+      geom_point(mapping = aes_string(x = input$feature, y = input$featuretwo, 
+                                      color = "coc_name"))
+    return(chart)
   })
 }

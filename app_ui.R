@@ -8,26 +8,57 @@ library(plotly)
 
 source("app_server.R")
 
-feature_input <- selectInput(
-  inputId = "feature",
-  label = "Area of Interest",
-  choices = national$coc_name,
-  selected = "coc_number"
-)
-
 # create introduction page
 intro_panel <- tabPanel(
   "Introduction",
-  p("We will be discussing and analyzing the people experiencing homelessness.")
+  p("We will be discussing and analyzing the people experiencing homelessness
+    in the United States primarily focusing in key states throughout out the 
+    nation. We decided to emphasize data collected from the states of 
+    Washington, California, Florida and New York since these states are located
+    in each corner of the country."),
+  p("We will be exploring the field/domain of homelessness in order to humanize
+    the homeless population that is ever so present yet invisible to our society
+    . One of the reasons we decided to dedicate our project to this topic is to 
+    create empathy for those suffering from it."),
+  p("At the same time, we would like to be responsible with our data and not 
+      reduce our subject to their conditions, which is why we are committed to 
+      researching their interpersonal conditions.")
 )
 
 # create first chart page
+x_data <- all_homeless_wa %>% 
+  select(sheltered_total_homeless_individuals, 
+         sheltered_total_homeless_people_in_families, sheltered_homeless, 
+         sheltered_total_homeless_veterans, 
+         sheltered_total_homeless_unaccompanied_youth_under_25)
+x_col_names <- colnames(x_data)
+
+y_data <- all_homeless_wa %>% 
+  select(unsheltered_homeless, unsheltered_homeless_individuals, 
+         unsheltered_homeless_veterans, unsheltered_homeless_people_in_families,
+         unsheltered_homeless_unaccompanied_youth_under_25)
+y_col_names <- colnames(y_data)
+
+featurex_input <- selectInput(
+  inputId = "feature",
+  label = "Select a feature",
+  choices = x_col_names,
+  selected = "sheltered_homeless"
+)
+featurey_input <- selectInput(
+  inputId = "featuretwo",
+  label = "Select a feature",
+  choices = y_col_names,
+  selected = "unsheltered_homeless"
+)
+
 first_panel <- tabPanel(
   "Chart 1",
-  p("Our first chart."),
-  feature_input,
-  checkboxInput("smooth", label = strong("Show Trendline"), value = TRUE),
-  plotlyOutput("plot")
+  titlePanel("Homelessness in Washington"),
+  featurex_input,
+  featurey_input,
+  plotOutput("plot_one"),
+  p("Our first chart.")
 )
 
 # create second chart page
@@ -84,11 +115,6 @@ third_panel <- tabPanel(
 )
 
 # create summary page
-# UI ---------------------
-
-
-
-
 summary_sidebar <- sidebarPanel(
   p("State"),
   selectInput( 
