@@ -104,11 +104,13 @@ sum_graph <- mainPanel(
 summary_panel <- tabPanel(
   "Summary",
   titlePanel("Key Takeaways"),
-  p("1 key takeways de "),
-  p("2 key takeways de "),
   p("It is evident from all charts that the overall homeless population is a growing problem that is nation wide.
     In focusing our scope of analysis on the homeless veteran population we are able to gain insight onto the reasons for displacement
-    and how lack of support for the veteran population and extending to the mentally ill population, has exacerbated the homeless prblem in America")
+    and how lack of support for the veteran population and extending to the mentally ill population, has exacerbated the homeless problem in America"),
+  p("We can also see from the chart that the capacity for housing the homeless does not meet the number of homeless veterans; 
+    it can then be deduced that either the support systems for veterans need reform or that housing and shelter resources for
+    the homeless need expansion"),
+  p("Key Takeaway 3")
   
   #sidebarLayout(
   #summary_sidebar, 
